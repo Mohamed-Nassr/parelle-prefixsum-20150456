@@ -16,15 +16,12 @@ public class PrefixSum {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] numbers = new int[]{0,5,5,21,3,5};
-        System.out.println(numbers.length);
+        int[] numbers = new int[]{5,5,21,3,5};
         int[] prefixSum;
         normal sum = new normal(numbers);
         prefixSum = sum.getPrefixSum();
-        System.out.println(prefixSum.length);
-
         for(int i= 0; i<prefixSum.length;i++){
-            System.out.print(prefixSum[i]);
+            System.out.print(prefixSum[i]+", ");
         }
     }
     

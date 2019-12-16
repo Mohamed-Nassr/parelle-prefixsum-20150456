@@ -16,7 +16,7 @@ public class normal {
     }
     public int[] getPrefixSum(){
         int[] prefix = new int[this.numbers.length];
-        prefix[0] = 0;
+        prefix[0] = this.numbers[0];
         for(int i=1 ; i < this.numbers.length ; i++){
             prefix[i] = prefix[i-1] + this.numbers[i];
         }
