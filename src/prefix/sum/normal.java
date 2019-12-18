@@ -14,12 +14,9 @@ public class normal {
     normal(int []numbers){
         this.numbers = numbers;
     }
-    public int[] getPrefixSum(){
-        int[] prefix = new int[this.numbers.length];
-        prefix[0] = this.numbers[0];
+    public void getPrefixSum(){
         for(int i=1 ; i < this.numbers.length ; i++){
-            prefix[i] = prefix[i-1] + this.numbers[i];
+            this.numbers[i] = this.numbers[i-1] + this.numbers[i];
         }
-        return prefix;
     }
 }
